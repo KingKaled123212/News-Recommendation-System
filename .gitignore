@@ -1,0 +1,31 @@
+# Data
+data/
+
+# Processed files
+*.pkl
+*.npy
+*.pt
+*.zip
+*.vec
+
+# GloVe
+glove*/
+
+# Model checkpoints and results
+models/*
+!models/.gitkeep
+results/*
+!results/.gitkeep
+
+# Python
+__pycache__/
+*.pyc
+.env
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
