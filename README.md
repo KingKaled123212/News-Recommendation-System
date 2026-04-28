@@ -173,3 +173,67 @@ jupyter notebook notebooks/03_training.ipynb
 1. Wu, F. et al. (2020). MIND: A Large-scale Dataset for News Recommendation. ACL 2020.
 2. Wu, C. et al. (2019). NRMS: Neural News Recommendation with Multi-Head Self-Attention. EMNLP 2019.
 3. Pennington, J. et al. (2014). GloVe: Global Vectors for Word Representation. EMNLP 2014.
+
+
+exp_lr5e4] Epoch 1/5  Loss: 1.5100  (566s)
+  Evaluating on dev set...
+  AUC     : 0.5863
+  MRR     : 0.2955
+  nDCG@5  : 0.2824
+  nDCG@10 : 0.3447
+  ✓ New best AUC=0.5863 — checkpoint saved.
+[exp_lr5e4] Epoch 2/5  Loss: 1.4565  (571s)
+  Evaluating on dev set...
+  AUC     : 0.5935
+  MRR     : 0.3113
+  nDCG@5  : 0.2955
+  nDCG@10 : 0.3562
+  ✓ New best AUC=0.5935 — checkpoint saved.
+[exp_lr5e4] Epoch 3/5  Loss: 1.4445  (580s)
+  Evaluating on dev set...
+  AUC     : 0.5860
+  MRR     : 0.2999
+  nDCG@5  : 0.2844
+  nDCG@10 : 0.3460
+[exp_lr5e4] Epoch 4/5  Loss: 1.4416  (583s)
+  Evaluating on dev set...
+  AUC     : 0.5842
+  MRR     : 0.3107
+  nDCG@5  : 0.2931
+...
+  AUC     : 0.5832
+  MRR     : 0.3027
+  nDCG@5  : 0.2877
+  nDCG@10 : 0.3485
+
+
+[baseline] Epoch 1/5  Loss: 1.9249  (567s)
+  Evaluating on dev set...
+  AUC     : 0.5759
+  MRR     : 0.2969
+  nDCG@5  : 0.2734
+  nDCG@10 : 0.3414
+  ✓ New best AUC=0.5759 — checkpoint saved.
+[baseline] Epoch 2/5  Loss: 1.5547  (560s)
+  Evaluating on dev set...
+  AUC     : 0.5920
+  MRR     : 0.3041
+  nDCG@5  : 0.2821
+  nDCG@10 : 0.3500
+  ✓ New best AUC=0.5920 — checkpoint saved.
+[baseline] Epoch 3/5  Loss: 1.5146  (561s)
+  Evaluating on dev set...
+  AUC     : 0.6040
+  MRR     : 0.3108
+  nDCG@5  : 0.2905
+  nDCG@10 : 0.3581
+  ✓ New best AUC=0.6040 — checkpoint saved.
+[baseline] Epoch 4/5  Loss: 1.4992  (560s)
+  Evaluating on dev set...
+  AUC     : 0.6076
+  MRR     : 0.3154
+...
+  MRR     : 0.3135
+  nDCG@5  : 0.2952
+  nDCG@10 : 0.3617
+  ✓ New best AUC=0.6105 — checkpoint saved.
