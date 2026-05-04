@@ -128,7 +128,7 @@ The model substantially outperforms a random baseline across all metrics. MRR an
 
 ### Per-Impression AUC Distribution
 
-Evaluating AUC on each individual impression (rather than aggregating) reveals significant heterogeneity. While mean AUC is approximately 0.614, many impressions score near 0.5 (random), while others score close to 1.0. This wide distribution is typical of recommendation systems — the model is highly effective for some users and essentially random for others.
+Evaluating AUC on each individual impression (rather than aggregating) reveals significant variety. While mean AUC is approximately 0.614, many impressions score near 0.5 (random), while others score close to 1.0. This wide distribution is typical of recommendation systems — the model is highly effective for some users and essentially random for others.
 
 ### AUC by History Length
 
@@ -156,7 +156,6 @@ Performance scales clearly with history length. Users with 31–50 clicks give t
 - **Category embeddings:** Concatenating a learned category vector to the news representation could help the model specialize per topic, and would give cold-start users a stronger prior based on the categories of their few clicked articles
 - **Abstract encoder:** Many articles have meaningful abstracts; encoding both title and abstract and combining them could improve news representations significantly, since titles alone are often too short to capture article content
 - **Cold-start mitigation:** For users with few clicks, falling back to a popularity-based ranker or using demographic signals could improve cold-start performance. Alternatively, the model could be augmented with a user-agnostic content similarity component that activates when history is sparse
-- Unfortunately the .gitignore led to the models and .pt files not transferring over from the computer lab into my github, likely due to file size, so I was unable to put those into my final repository.
 
 ---
 
@@ -167,6 +166,11 @@ This project demonstrates a working end-to-end neural news recommendation pipeli
 Hyperparameter experiments showed that the model is sensitive to learning rate (too high causes divergence after initial progress) but benefits from slightly reduced regularization (dropout=0.1 outperformed dropout=0.2), suggesting the baseline architecture has sufficient inductive bias from the attention mechanism without needing heavy dropout.
 
 The most critical bottleneck is cold-start performance for sparse users — a fundamental challenge in news recommendation that motivates future extensions such as knowledge graph integration and contextualized language model embeddings.
+
+**Note:** Model checkpoints (`.pt` files) are not included in this repository 
+due to file size constraints. All training outputs and evaluation metrics are 
+documented in the Results section and reproducible by running the notebooks 
+in order.
 
 ---
 
